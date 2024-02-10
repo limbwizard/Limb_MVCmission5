@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Isaac's Rock Climbing</h1>
+    <p class="lead">Embark on your rock climbing journey with confidence and skill.</p>
+    <img src="~/images/rock-climbing-banner.jpg" class="img-fluid" alt="Rock Climbing Banner" style="margin-bottom: 20px;">
+
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <h2>Why Rock Climbing?</h2>
+            <p>Rock climbing not only challenges your limits but also improves physical strength and mental resilience. Discover the joy and satisfaction that comes from conquering peaks.</p>
+            <a class="btn btn-primary" href="@Url.Action("Climbing", "Home")">Learn More</a>
+        </div>
+
+        <div class="col-md-4">
+            <h2>Tutoring Services</h2>
+            <p>Personalized tutoring from beginner to advanced levels. Let Isaac Limb guide you through mastering techniques, safety, and equipment knowledge to elevate your climbing experience.</p>
+            <a class="btn btn-success" href="@Url.Action("Tutoring", "Home")">Explore Tutoring</a>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <h2>Get Started</h2>
+        <p>Ready to take your climbing to new heights? Contact Isaac today and schedule your first session.</p>
+        <a class="btn btn-info" href="mailto:isaacdalelimb@gmail.com">Contact Isaac</a>
+    </div>
+</div>
+
+<style>
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+</style>

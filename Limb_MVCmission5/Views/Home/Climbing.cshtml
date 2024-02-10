@@ -1,0 +1,44 @@
+﻿@model Limb_MVCmission5.Views.Home.ClimbingModel
+@{
+    ViewData["Title"] = "Rock Climbing Essentials";
+}
+
+<div class="climbing-intro">
+    <h1 class="display-4">Rock Climbing Essentials</h1>
+    <p class="lead">Embark on your climbing journey with us. Discover different climbing techniques, the essential gear you'll need, and safety tips to keep you secure on the wall.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Techniques</h2>
+        <p>Mastering rock climbing requires understanding various techniques:</p>
+        <ul>
+            <li>Basic grips and how to conserve energy</li>
+            <li>Footwork techniques to improve efficiency</li>
+            <li>Advanced maneuvers for difficult climbs</li>
+        </ul>
+        <img src="~/images/climbing-techniques.jpg" alt="Climbing Techniques" class="img-fluid">
+    </div>
+    <div class="col-md-6">
+        <h2>Equipment</h2>
+        <p>Choosing the right gear is crucial for a safe and enjoyable climb:</p>
+        <ul>
+            <li>Climbing shoes that offer the best grip</li>
+            <li>Harnesses for safety and comfort</li>
+            <li>Helmets to protect against falls and debris</li>
+        </ul>
+        <img src="~/images/climbing-gear.jpg" alt="Climbing Gear" class="img-fluid">
+    </div>
+</div>
+
+<div class="safety-tips mt-4">
+    <h2>Safety Tips</h2>
+    <p>Always prioritize safety to ensure a positive climbing experience:</p>
+    <ul>
+        <li>Check your equipment before every climb</li>
+        <li>Learn proper belaying techniques</li>
+        <li>Never climb alone and always inform someone about your climbing plans</li>
+    </ul>
+</div>
+
+<a href="@Url.Action("Tutoring", "Home")" class="btn btn-primary mt-3">Learn with Isaac</a>
